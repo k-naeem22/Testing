@@ -166,7 +166,7 @@ end
 for i=Nc+1:N
     for j=1:N
         if i==j
-            Full_Matrix(i,j)=(eps_r_E2+eps_r_E2)/(2);
+            Full_Matrix(i,j)=(eps_r_E1+eps_r_E2)/(2)(eps_r_E1-eps_r_E2);
         else
             r=panel_centers(i,:)-panel_centers(j,:);
             R=norm(r);
